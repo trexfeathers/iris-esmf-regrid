@@ -28,7 +28,7 @@ jobs:
       - name: install nox
         run: |
           source $CONDA/bin/activate base
-          conda install -y -c conda-forge nox
+          conda install -y -c conda-forge nox pyyaml
       - name: generate lockfiles
         run: $CONDA/bin/nox --session update_lockfiles
       - name: create pull request
