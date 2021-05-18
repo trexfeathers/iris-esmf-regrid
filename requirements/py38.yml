@@ -22,3 +22,4 @@ dependencies:
   - flake8-import-order
   - pre-commit
   - pytest
+  - iris-sample-data
