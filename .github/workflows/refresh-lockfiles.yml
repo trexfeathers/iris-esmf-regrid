@@ -30,7 +30,7 @@ jobs:
           source $CONDA/bin/activate base
           conda install -y -c conda-forge nox
       - name: generate lockfiles
-        run: nox --session update_lockfiles
+        run: $CONDA/bin/nox --session update_lockfiles
       - name: create pull request
         uses: peter-evans/create-pull-request@052fc72b4198ba9fbc81b818c6e1859f747d49a8
         with:
